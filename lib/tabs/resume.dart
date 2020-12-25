@@ -12,7 +12,7 @@ class _ResumeScreenState extends State<ResumeScreen> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        child: Center(child: Image.asset('images/resume.jpg',width: 800.0,)),
+        child: Center(child: Image.asset('images/CV.jpg',width: 800.0,)),
       ),
     );
   }

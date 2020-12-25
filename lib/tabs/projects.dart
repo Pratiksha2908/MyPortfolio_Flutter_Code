@@ -15,6 +15,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
   Widget build(BuildContext context) {
     return Container(
       child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
           children: [
             Padding(

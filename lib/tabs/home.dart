@@ -17,9 +17,15 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('images/me.png'),
+              CircleAvatar(
+                backgroundImage: AssetImage('images/pratiksha.jpg',),
+                radius: 120.0,
+              ),
+              SizedBox(height: 20.0,),
               Text('Hi, I\'m Pratiksha', style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, color: Colors.blue.shade700),),
+              SizedBox(height: 8.0,),
               Text('I am an Application Developer', textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'MontserratAlternates-Bold',fontSize: 35.0, color: Color(0xff202A44)),),
+              SizedBox(height: 8.0,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

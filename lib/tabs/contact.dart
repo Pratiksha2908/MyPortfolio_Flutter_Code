@@ -16,11 +16,8 @@ class _ContactState extends State<Contact> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CircleAvatar(
-            backgroundImage: AssetImage('images/pratiksha.jpg',),
-            radius: 120.0,
-          ),
-          SizedBox(height: 20.0,),
+          Image.asset('images/me.png'),
+          SizedBox(height: 15.0,),
           Text(
             "Pratiksha Shinde",
             style: TextStyle(
