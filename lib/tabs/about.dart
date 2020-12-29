@@ -73,31 +73,6 @@ class _AboutScreenState extends State<AboutScreen> {
                             children: [
                               Expanded(
                                 child: Text(
-                                  'DATE OF BIRTH:',
-                                  style: TextStyle(
-                                    color: Color(0xff202A44),
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Text(
-                                  ' August 29, 1999',
-                                  style: TextStyle(
-                                    color: Colors.blue.shade700,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 20.0,),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Text(
                                   'EMAIL:',
                                   style: TextStyle(
                                     color: Color(0xff202A44),
@@ -109,56 +84,6 @@ class _AboutScreenState extends State<AboutScreen> {
                               Expanded(
                                 child: Text(
                                   ' er.pratikshashinde@gmail.com',
-                                  style: TextStyle(
-                                    color: Colors.blue.shade700,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 20.0,),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Text(
-                                  'MOBILE NO.:',
-                                  style: TextStyle(
-                                    color: Color(0xff202A44),
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Text(
-                                  ' 7219622570',
-                                  style: TextStyle(
-                                    color: Colors.blue.shade700,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 20.0,),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Text(
-                                  'ADDRESS:',
-                                  style: TextStyle(
-                                    color: Color(0xff202A44),
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Text(
-                                  ' Parande Nagar, Dighi, Pune - 411015',
                                   style: TextStyle(
                                     color: Colors.blue.shade700,
                                     fontWeight: FontWeight.bold,
