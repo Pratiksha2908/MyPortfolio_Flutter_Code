@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/tabs/home.dart' as first;
 import 'package:portfolio/tabs/about.dart' as second;
@@ -91,23 +92,23 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                           Container(
                               width: 50,
                               alignment: Alignment.center,
-                              child: Text("Home", style: TextStyle(fontSize: 13.5),)),
+                              child: Text("Home", style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.bold),)),
                           Container(
                               width: 50,
                               alignment: Alignment.center,
-                              child: Text("About", style: TextStyle(fontSize: 13.5),)),
+                              child: Text("About", style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.bold),)),
                           Container(
                               width: 50,
                               alignment: Alignment.center,
-                              child: Text("Resume", style: TextStyle(fontSize: 13.5),)),
+                              child: Text("Resume", style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.bold),)),
                           Container(
                               width: 60,
                               alignment: Alignment.center,
-                              child: Text("Projects", style: TextStyle(fontSize: 13.5),)),
+                              child: Text("Projects", style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.bold),)),
                           Container(
                               width: 70,
                               alignment: Alignment.center,
-                              child: Text("CONTACT", style: TextStyle(fontSize: 13.5),))
+                              child: Text("CONTACT", style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.bold),))
                         ],
                         controller: _tabController,
                         indicatorColor: Colors.blue.shade900,

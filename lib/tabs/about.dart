@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class AboutScreen extends StatefulWidget {
   @override
@@ -60,7 +61,7 @@ class _AboutScreenState extends State<AboutScreen> {
                           ),
                           SizedBox(height: 50.0,),
                           Text(
-                            'Basic Information',
+                            'Skill Set',
                             style: TextStyle(
                                 color: Color(0xff202A44),
                                 fontFamily: "MontserratAlternates-Bold",
@@ -68,55 +69,83 @@ class _AboutScreenState extends State<AboutScreen> {
                                 fontSize: 30.0
                             ),
                           ),
-                          SizedBox(height: 30.0,),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Text(
-                                  'EMAIL:',
-                                  style: TextStyle(
-                                    color: Color(0xff202A44),
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Text(
-                                  ' er.pratikshashinde@gmail.com',
-                                  style: TextStyle(
-                                    color: Colors.blue.shade700,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20.0),
+                            child: LinearPercentIndicator(
+                              width: MediaQuery.of(context).size.width - 150,
+                              animation: true,
+                              lineHeight: 20.0,
+                              animationDuration: 2000,
+                              percent: 0.90,
+                              center: Text("HTML5 and CSS3", style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xff202A44))),
+                              linearStrokeCap: LinearStrokeCap.roundAll,
+                              progressColor: Colors.blue.shade200,
+                            ),
                           ),
-                          SizedBox(height: 20.0,),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Text(
-                                  'LANGUAGES:',
-                                  style: TextStyle(
-                                    color: Color(0xff202A44),
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Text(
-                                  ' English, Hindi, Marathi',
-                                  style: TextStyle(
-                                    color: Colors.blue.shade700,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "MontserratAlternates-Bold",
-                                  ),
-                                ),
-                              ),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: LinearPercentIndicator(
+                              width: MediaQuery.of(context).size.width - 150,
+                              animation: true,
+                              lineHeight: 20.0,
+                              animationDuration: 2000,
+                              percent: 0.88,
+                              center: Text("Angular", style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xff202A44))),
+                              linearStrokeCap: LinearStrokeCap.roundAll,
+                              progressColor: Colors.deepOrange.shade300,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: LinearPercentIndicator(
+                              width: MediaQuery.of(context).size.width - 150,
+                              animation: true,
+                              lineHeight: 20.0,
+                              animationDuration: 2000,
+                              percent: 0.85,
+                              center: Text("C++", style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xff202A44))),
+                              linearStrokeCap: LinearStrokeCap.roundAll,
+                              progressColor: Colors.red.shade300,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: LinearPercentIndicator(
+                              width: MediaQuery.of(context).size.width - 150,
+                              animation: true,
+                              lineHeight: 20.0,
+                              animationDuration: 2000,
+                              percent: 0.85,
+                              center: Text("Flutter", style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xff202A44))),
+                              linearStrokeCap: LinearStrokeCap.roundAll,
+                              progressColor: Colors.purple.shade200,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: LinearPercentIndicator(
+                              width: MediaQuery.of(context).size.width - 150,
+                              animation: true,
+                              lineHeight: 20.0,
+                              animationDuration: 2000,
+                              percent: 0.80,
+                              center: Text("Python", style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xff202A44))),
+                              linearStrokeCap: LinearStrokeCap.roundAll,
+                              progressColor: Colors.indigo.shade200,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: LinearPercentIndicator(
+                              width: MediaQuery.of(context).size.width - 150,
+                              animation: true,
+                              lineHeight: 20.0,
+                              animationDuration: 2000,
+                              percent: 0.3,
+                              center: Text("MEAN Stack", style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xff202A44))),
+                              linearStrokeCap: LinearStrokeCap.roundAll,
+                              progressColor: Colors.green.shade300,
+                            ),
                           ),
                         ],
                       ),

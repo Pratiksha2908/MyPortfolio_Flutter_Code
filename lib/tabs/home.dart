@@ -18,8 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                backgroundImage: AssetImage('images/pratiksha.jpg',),
-                radius: 120.0,
+                backgroundImage: AssetImage('images/Pratiksha-2.jpeg',),
+                radius: 170.0,
               ),
               SizedBox(height: 20.0,),
               Text('Hi, I\'m Pratiksha', style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, color: Colors.blue.shade700),),
@@ -30,13 +30,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CardWidget('Flutter'),
-                  CardWidget('HTML'),
+                  CardWidget('Angular'),
                   CardWidget('Python'),
                   CardWidget('C++'),
                 ],
               ),
               SizedBox(height: 30.0,),
-              FlatButton(
+              MaterialButton(
                   onPressed: () {
                     Navigator.push(
                         context,
@@ -54,12 +54,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5.0),
                       gradient: LinearGradient(
+                        colors: [Colors.blue.shade900, Colors.deepPurpleAccent,],
                         begin: Alignment.bottomLeft,
                         end: Alignment.topRight,
-                        colors: [
-                          Colors.blue.shade900,
-                          Colors.deepPurpleAccent,
-                        ]
                       )
                     ),
                     child: Center(

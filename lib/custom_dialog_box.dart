@@ -57,7 +57,7 @@ class _CustomDialogBoxState extends State<CustomDialogBox> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(bottom: 30.0, right: 10.0),
-                child: FlatButton(
+                child: MaterialButton(
                     onPressed: () async {
                       if(await canLaunch("https://github.com/Pratiksha2908?tab=repositories")) {
                         await launch("https://github.com/Pratiksha2908?tab=repositories");
@@ -68,7 +68,7 @@ class _CustomDialogBoxState extends State<CustomDialogBox> {
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 30.0, right: 30.0),
-                child: FlatButton(
+                child: MaterialButton(
                     onPressed: (){
                       Navigator.of(context).pop();
                     },
